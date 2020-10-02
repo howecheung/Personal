@@ -1,12 +1,8 @@
 /*=================================
-#微信公众号iosrule
-#by红鲤鱼绿鲤鱼与驴 2020.9.25
-#https://github.com/wangdelu2020
-#查询联通流量话费，提醒流量和话费的使用情况。
-#教程:微信搜索🔎iosrule,关注公众号，翻看历史教程文章。
+
 
 #本脚本远程库订阅
-https://raw.githubusercontent.com/wangdelu2020/hongliyu/master/liantongnotice.js
+https://github.com/howecheung/howe/raw/main/script/liantongnotice.js
 
 #QX 联通流量话费提醒
 https:\/\/m.client\.10010\.com\/mobileService\/home\/queryUserInfoSeven\.htm? url script-request-header liantongnotice.js
@@ -18,7 +14,7 @@ mit=m.client.10010.com
 
 //====================================
 
-#loon联通流量话费提醒
+#loon & surge 联通流量话费提醒
 
 http-request https:\/\/m.client\.10010\.com\/mobileService\/home\/queryUserInfoSeven\.htm? script-path=liantongnotice.js, requires-header=true, timeout=30, tag=联通流量话费提醒
 
