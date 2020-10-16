@@ -1,5 +1,5 @@
 #!name=淘宝京东历史价格
-#!desc= 京东和淘宝的历史价格结合各自的主机名
+#!desc= 淘宝比价不生效或失效的时候需要重装淘宝，不开脚本进淘宝会使脚本失效！
 //name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Price.sgmodule
