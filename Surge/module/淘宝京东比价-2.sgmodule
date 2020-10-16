@@ -1,0 +1,16 @@
+#!name=淘宝京东历史价格
+#!desc= 淘宝比价不生效或失效的时候需要重装淘宝，不开脚本进淘宝会使脚本失效！
+//name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript
+//name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript
+//github:https://github.com/chiupam/Proxy/blob/master/Surge/Price.sgmodule
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Price.sgmodule
+[Script]
+# > 淘宝比价
+# >> 不生效或失效的时候需要重装淘宝
+# >>> 注意：不开脚本进淘宝会使脚本失效！
+淘宝比价 = type=http-request, pattern=^http://.+/amdc/mobileDispatch, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+淘宝比价 = type=http-response, pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+# > 京东比价
+京东比价 = type=http-response, pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
+[MITM]
+hostname = %INSERT% trade-acs.m.taobao.com, api.m.jd.com
