@@ -1,0 +1,46 @@
+#!name=JD Tasks
+#!desc=This is a series of JD tasks and includes BoxJs TestFlight scripts.
+//name = type=cron, cronexp=cronexample, wake-system=1, timeout=600, script-path=javescript
+#!github:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
+#!raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
+[Script]
+# > 获取京东Cookie
+获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+# > 京东系列
+# >> 取消关注
+取消关注 = type=cron, cronexp=0 59 23 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_unsubscribe.js
+# >> 京东京豆(00:01)
+京豆 = type=cron, cronexp=0 1 0 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+# > 京东游戏系列
+# >> 兑换类(名额有限，同时进行)
+宠汪汪————京豆 = type=cron, cronexp=0 0 0-16/8 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_reward.js
+京小超————京豆(大概率失败) = type=cron, cronexp=10 0 0 * * *,wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_blueCoin.js
+京小超————京豆(第二次尝试) = type=cron, cronexp=0 7 0 * * *,wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_blueCoin.js
+# >> 宠汪汪
+宠汪汪————偷粮 = type=cron,cronexp=0 4 0-6/6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js
+# >>> 喂食单独分 7 次执行，确保成功喂食
+宠汪汪————首次喂食 = type=cron, cronexp=0 10 0 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy.js
+宠汪汪————第二次喂食 = type=cron, cronexp=0 55 5 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
+宠汪汪————第三次喂食 = type=cron, cronexp=0 58 8 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
+宠汪汪————第四次喂食 = type=cron, cronexp=0 2 12 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
+宠汪汪————第五次喂食 = type=cron, cronexp=0 5 15 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
+宠汪汪————第六次喂食 = type=cron, cronexp=0 8 18 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
+宠汪汪————第七次喂食 = type=cron, cronexp=0 11 21 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
+# >> 东东农场(6、12、18时 0分)
+东东农场 = type=cron, cronexp=0 0 6-18/6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js
+# >> 东东萌宠(6、12、18时 8分)
+东东萌宠 = type=cron, cronexp=0 8 6-18/6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_pet.js
+# >> 种豆得豆 (7-21时 奇数时 0分)
+种豆得豆 = type=cron, cronexp=15 0 7-21/2 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_plantBean.js
+# >> 天天加速(奇数时 5分)
+天天加速 = type=cron, cronexp=0 5 1-23/2 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js
+# >> 京小超(1、9、17时 8分)
+京小超 = type=cron, cronexp=0 8 1-23/8 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js
+# >> 摇钱树(2、10、18时 10分)
+摇钱树 = type=cron, cronexp=0 10 2-18/8 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_moneyTree.js
+# >> 临时活动
+进店领豆 = type=cron,cronexp=0 9 0 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_shop.js
+# > BoxJs TF
+Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.net,script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+[MITM]
+hostname = %APPEND% api.m.jd.com
