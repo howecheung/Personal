@@ -1,0 +1,22 @@
+#!name=Get cookie. by HoweCheung
+#!desc=该模块用于定时签到脚本的Cookie获取. 集成: 京东签到, 百度贴吧，联通话费提醒，中国联通，腾讯视频，WPS。您可以在使用后手动将其禁用，以免产生不必要的MITM.
+#!system=ios
+
+[Script]
+
+贴吧_获取cookie = type=http-request,pattern=https?:\/\/c\.tieba\.baidu\.com\/c\/s\/login,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js
+
+京东签到Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+WPS签到Cookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
+
+腾讯视频签到Cookie = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+
+联通流量提醒Cookie = type=http-request,pattern=https:\/\/m.client\.10010\.com\/mobileService\/home\/queryUserInfoSeven\.htm?,script-path=https://raw.githubusercontent.com/howecheung/Personal/master/Scripts/liantongnotice.js
+
+中国联通 = type=http-request,pattern=^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+中国联通 = type=http-request,pattern=^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+中国联通 = type=http-request,pattern=^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+
+[MITM]
+hostname = %APPEND% c.tieba.baidu.com, jdjoy.jd.com, act.10010.com, m.client.10010.com, *.video.qq.com, zt.wps.cn
