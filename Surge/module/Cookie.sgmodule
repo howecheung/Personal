@@ -1,5 +1,5 @@
 #!name=Get cookie. by HoweCheung
-#!desc=该模块用于定时签到脚本的Cookie获取. 集成: 京东签到, 百度贴吧，联通话费提醒，中国联通，腾讯视频，WPS。您可以在使用后手动将其禁用，以免产生不必要的MITM.
+#!desc=该模块集成: 京东签到, 百度贴吧，联通话费提醒，中国联通，腾讯视频，WPS。
 #!system=ios
 
 [Script]
