@@ -1,0 +1,8 @@
+#!name=Sub_info
+#!desc=订阅信息
+
+[Panel]
+Sub_info = script-name=Sub_info
+
+[Script]
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=(https%3A%2F%2Fapi.skimeow.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D452ea8c394d99b1dcbd3b6810d5f52a6)&reset_day=1&title=AmyInfo
