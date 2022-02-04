@@ -39,7 +39,7 @@ color2 参数可以自定义图标颜色，为模块开启时显示颜色。
     moduleState = (await httpAPI("/v1/modules")).enabled.includes(module);
     if (moduleState) panel["icon-color"] = color2 ? color2 : "#ff0000";
     else color1 ? (panel["icon-color"] = color1) : "";
-    panel.content = `状态: ${moduleState ? "开启" : "关闭"}`;
+    panel.content = `State: ${moduleState ? "ON" : "OFF"}`;
     $done(panel);
 })();
 
