@@ -20,7 +20,7 @@ $httpClient.get(url, function(error, response, data){
     let isp = jsonData.isp
   body = {
     title: "𝗜𝗣-𝗖𝗛𝗘𝗖𝗞",
-    content: `${emoji}${country} - ${city}|${isp}`,
+    content: `${emoji}${country} - ${city}`,
     icon: "globe.asia.australia.fill"
   }
   $done(body);
