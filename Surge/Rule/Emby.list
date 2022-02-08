@@ -1,0 +1,15 @@
+#普拉斯影业
+DOMAIN-SUFFIX,emby.plusmedia.site
+DOMAIN-SUFFIX,emby-cf.plusmedia.site
+DOMAIN-SUFFIX,emby.xeton.dev
+DOMAIN-SUFFIX,jellyfin.xeton.dev
+DOMAIN-SUFFIX,movie.xeton.dev
+
+#猫熊影业
+DOMAIN-SUFFIX,embyclub.org
+DOMAIN-SUFFIX,azsgp.embyclub.org
+IP-CIDR,20.189.99.35
+
+#Pronemby
+DOMAIN-SUFFIX,porn.embyclub.org
+DOMAIN-SUFFIX,pornemby.club
