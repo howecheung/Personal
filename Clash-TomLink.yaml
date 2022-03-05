@@ -50,7 +50,7 @@ proxy-providers:
 
   HK:
     type: http
-    url: "https://dove.589669.xyz/all2clash?&sub=https://sub.tomlink9527.xyz/api/v1/client/subscribe?token=e00c3e87d58249686274f47672fb64c1&filter=(%3F%3D.*(%E6%B8%AF%7CHK%7C(%3Fi)Hong))&emoji=2&sort=0"
+    url: "https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Fsub.tomlink9527.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3De00c3e87d58249686274f47672fb64c1&insert=false&exclude=%E4%B8%93%E7%BA%BF&include=%E9%A6%99%E6%B8%AF&emoji=true&list=true&tfo=false&scv=false&fdn=true&sort=false&udp=true&new_name=true"
     interval: 3600
     path: ./Proxy/HKList.yaml
     health-check:
@@ -60,7 +60,7 @@ proxy-providers:
 
   TW:
     type: http
-    url: "https://dove.589669.xyz/all2clash?&sub=https://sub.tomlink9527.xyz/api/v1/client/subscribe?token=e00c3e87d58249686274f47672fb64c1&filter=(%3F%3D.*(%E5%8F%B0%7CTW%7C(%3Fi)Taiwan))&emoji=2&sort=0"
+    url: "https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Fsub.tomlink9527.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3De00c3e87d58249686274f47672fb64c1&insert=false&exclude=%E4%B8%93%E7%BA%BF&include=%E5%8F%B0%E6%B9%BE&emoji=true&list=true&tfo=false&scv=false&fdn=true&sort=false&udp=true&new_name=true"
     interval: 3600
     path: ./Proxy/TWList.yaml
     health-check:
@@ -70,7 +70,7 @@ proxy-providers:
 
   SG:
     type: http
-    url: "https://dove.589669.xyz/all2clash?&sub=https://sub.tomlink9527.xyz/api/v1/client/subscribe?token=e00c3e87d58249686274f47672fb64c1&filter=(%3F%3D.*(%E6%96%B0%7C%E7%8B%AE%7C%E7%8D%85%7CSG%7C(%3Fi)Singapore))&emoji=2&sort=0"
+    url: "https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Fsub.tomlink9527.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3De00c3e87d58249686274f47672fb64c1&insert=false&exclude=%E4%B8%93%E7%BA%BF&include=%E6%96%B0%E5%8A%A0%E5%9D%A1&emoji=true&list=true&tfo=false&scv=false&fdn=true&sort=false&udp=true&new_name=true"
     interval: 3600
     path: ./Proxy/SGList.yaml
     health-check:
@@ -80,7 +80,7 @@ proxy-providers:
 
   JP:
     type: http
-    url: "https://dove.589669.xyz/all2clash?&sub=https://sub.tomlink9527.xyz/api/v1/client/subscribe?token=e00c3e87d58249686274f47672fb64c1&filter=(%3F%3D.*(%E6%97%A5%7CJP%7C(%3Fi)Japan))&emoji=2&sort=0"
+    url: "https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Fsub.tomlink9527.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3De00c3e87d58249686274f47672fb64c1&insert=false&exclude=%E4%B8%93%E7%BA%BF&include=%E6%97%A5%E6%9C%AC&emoji=true&list=true&tfo=false&scv=false&fdn=true&sort=false&udp=true&new_name=true"
     interval: 3600
     path: ./Proxy/JPList.yaml
     health-check:
@@ -90,7 +90,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://dove.589669.xyz/all2clash?&sub=https://sub.tomlink9527.xyz/api/v1/client/subscribe?token=e00c3e87d58249686274f47672fb64c1&filter=(%3F%3D.*(%E7%BE%8E%7CUS%7C(%3Fi)States%7CAmerican))&emoji=2&sort=0"
+    url: "https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Fsub.tomlink9527.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3De00c3e87d58249686274f47672fb64c1&insert=false&exclude=%E4%B8%93%E7%BA%BF&include=%E7%BE%8E%E5%9B%BD&emoji=true&list=true&tfo=false&scv=false&fdn=true&sort=false&udp=true&new_name=true"
     interval: 3600
     path: ./Proxy/USList.yaml
     health-check:
