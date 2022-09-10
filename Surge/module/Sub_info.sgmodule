@@ -5,4 +5,4 @@
 Sub_info = script-name=Sub_info,update-interval=43200
 
 [Script]
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Ffuqing.ch%2Fmodules%2Fservers%2Ffuqingsocks%2Fosubscribe.php%3Fsid%3D12922%26token%3DcNGa7tKbzAlQ&reset_day=9&title=订阅信息
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Ffuqing.ch%2Fmodules%2Fservers%2Ffuqingsocks%2Fosubscribe.php%3Fsid%3D12922%26token%3DcNGa7tKbzAlQ&reset_day=9&title=订阅信息-WestData
